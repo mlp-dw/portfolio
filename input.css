@@ -137,7 +137,7 @@ RESPONSIVE */
     margin: 5% 0 5% 0;
   }
   h2{
-    @apply text-lg
+    @apply text-sm
   }
   .competence{
     @apply flex-col justify-center items-center mx-auto m-2;
