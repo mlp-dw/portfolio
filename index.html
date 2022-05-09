@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.jpg">
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+        html {
+          font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+</head>
+
+<body class="text-indigo-200 m-6 bg-cover bg-fixed" style="background-image: url('images/header.png');">
+
+    <header class="flex flex-row my-6">
+        <a class="flex justify-start items-center text-indigo-500 no-underline hover:no-underline font-bold text-2xl lg:text-5xl" id="presentation">
+            Marie-<span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">Laure</span>
+        </a>
+        
+        <div class="flex w-3/4 justify-end items-center">		
+            <div class="flex justify-center text-sm">
+                <ul class="flex justify-center items-center">
+                    <li class="mr-2">
+                        <a class="text-indigo-500 hover:text-indigo-200 hover:no-underline py-2 px-2" target="_blank" href="../src/files/CV-DEV.jpg">CV</a>
+                    </li>
+                    <li>
+                        <a class="inline-block text-indigo-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="#github_id" href="https://github.com/mlp-dw">
+                            <svg width="25" height="24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.846 0c-6.63 0-12 5.506-12 12.303 0 5.445 3.435 10.043 8.205 11.674.6.107.825-.262.825-.585 0-.292-.015-1.261-.015-2.291-3.015.569-3.795-.754-4.035-1.446-.135-.354-.72-1.446-1.23-1.738-.42-.23-1.02-.8-.015-.815.945-.015 1.62.892 1.845 1.261 1.08 1.86 2.805 1.338 3.495 1.015.105-.8.42-1.338.765-1.645-2.67-.308-5.46-1.37-5.46-6.075 0-1.338.465-2.446 1.23-3.307-.12-.308-.54-1.569.12-3.26 0 0 1.005-.323 3.3 1.26.96-.276 1.98-.415 3-.415s2.04.139 3 .416c2.295-1.6 3.3-1.261 3.3-1.261.66 1.691.24 2.952.12 3.26.765.861 1.23 1.953 1.23 3.307 0 4.721-2.805 5.767-5.475 6.075.435.384.81 1.122.81 2.276 0 1.645-.015 2.968-.015 3.383 0 .323.225.707.825.585a12.047 12.047 0 0 0 5.919-4.489 12.537 12.537 0 0 0 2.256-7.184c0-6.798-5.37-12.304-12-12.304Z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>	
+        </div>			
+    </header>
+
+<!--A propos-->
+    <section class="flex flex-col items-center justify-center text-center my-24">
+        <div class="ombre">
+            <p class="text-xl ">Un problème sans solution est un problème mal posé.</p>   
+            <span class="text-right bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">Albert Einstein</span>
+        </div>
+    </section>
+
+<!-- PROJETS-->
+    <section id="projet sm:w-100 md:w-2/5 lg:w-2/3 my-12">
+        <div class="hide ombre" id="projet">
+            Projets
+        </div> 
+        <div class="flex flex-row justify-around my-6 trio">
+            <div class="card mx-5 item">
+                <a target="_blank" href="https://mlp-dw.github.io/one-million-lines/">One Million Lines</a>
+            </div>
+            <div class="card mx-5 item">
+                <a target="_blank" href="https://codepen.io/mlp-dw/full/mdBjLNa">Papouille Style</a>
+            </div>
+            <div class="card mx-5 item">
+                <a target="_blank" href="https://codepen.io/mlp-dw/full/GRQZKPR">Beat Box</a>
+            </div>
+        </div>
+        <div class="flex flex-row justify-around my-24 duo">
+            <div class="card mx-5 item">
+                <a target="_blank" href="https://hospital2n.herokuapp.com/">Hopital</a>
+            </div>
+            <div class="item boov ombre" id="projet">
+                Projets
+            </div>
+            <div class="card mx-5 item">
+                <a target="_blank" href="https://mlp-dw.github.io/Memory/">Memory</a>
+            </div>
+        </div>
+        <div class="flex flex-row justify-around my-6 trio">
+            <div class="card mx-5 item">
+                <a target="_blank" href="https://comparoperator.herokuapp.com/">ComparOpreator</a> 
+            </div>
+            <div class="card mx-5 item">
+                <a target="_blank" href="https://hunterproducts.herokuapp.com/">Product Hunt</a>
+            </div>
+            <div class="card mx-5 item">
+                <a target="_blank" href="">Cagnote Pote</a>
+            </div>
+        </div>
+
+    </section>
+
+<!--FORMATION-->
+    <section>
+        <div class="container my-12 mx-auto" id="formation">
+            <h2 class="font-header mx-5 text-5xl flex flex-col justify-center font-bold text-center ombre">
+                Formations
+            </h2>
+            
+            <div class="w-full lg:w-2/3 mx-auto flex flex-col mt-12 relative ">
+            
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center ">
+                            <span class="flex-shrink-0 ">
+                                <img src="https://www.garage404.com/wp-content/uploads/2020/05/garage-purple.png" class="w-52 h-auto p-1" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+            
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Stagiaire Développeuse Web & Web Mobile</span>
+                                    <span class="font-body italic text-grey-40 block">Novembre 2021 - Novembre 2022</span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">CCI Formations & Garage 404 - Roanne (42)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/lesage.png" class="w-72 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+            
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Broderie Haute-Couture</span>
+                                    <span class="font-body italic text-grey-40 block">Septembre 2016 - Avril 2017</span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">École Lesage - Paris (75) </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col md:flex-row text-center items-center justify-center">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/limart.png" class="w-52 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+            
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Licence Design de Mode</span>
+                                    <span class="font-body italic text-grey-40 block">2014 - 2016</span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Lim'Art - Bordeaux (33)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col md:flex-row text-center items-center justify-center">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0 ">
+                                <img src="./images/stgeraud2.png" class="w-72 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <i class="bx bxs-right-arrow text-primary hidden md:block"></i>
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Baccalauréat Sciences et Technologies du Design et des Arts Appliqués</span>
+                                    <span class="font-body italic text-grey-40 block">2011 - 2014</span>
+                                    <span class="text-xs">Mention Bien</span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Lycée St-Géraud - Aurillac (15)</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+<!-- COMPETENCES-->
+    <section class="my-12">
+
+        <h2 class="mx-auto text-5xl flex flex-col justify-center font-bold text-center ombre my-10" id="competence">
+            Compétences
+        </h2>
+        
+        <div class="flex flex-row flex-wrap justify-around m-10 competence">
+            <div class="flex flex-col justify-center">
+                <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top80">
+                    <img src="images/html.png" alt="html-logo" class="w-24 h-auto">
+                </div>
+            </div>
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top80">
+                <img src="images/css.png" alt="css-logo" class="w-24 h-auto">
+            </div>
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top50">
+                <img src="images/js.png" alt="js-logo" class="w-24 h-auto">
+            </div>
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top50">
+                <img src="images/php.png" alt="php-logo" class="w-24 h-auto">
+            </div>
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top40">
+                <img src="images/sql.png" alt="sql-logo" class="w-24 h-auto">
+            </div>
+        </div>  
+        
+        <div class="flex flex-row flex-wrap justify-around m-10 competence">
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top10">
+                <img src="images/wordpress.png" alt="wordpress-logo" class="w-24 h-auto">
+            </div>
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top30">
+                <img src="images/symfony.png" alt="symfony-logo" class="w-24 h-auto">
+            </div>
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top70">
+                <img src="images/photoshop.png" alt="photoshop-logo" class="w-24 h-auto">
+            </div>
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top70">
+                <img src="images/anglais.png" alt="english-flag" class="w-24 h-auto">
+            </div>
+            <div class="ring neon-white flex justify-center items-center m-5 colorBlock colorFill to-top80">
+                <img src="images/espagnol.png" alt="spanish-flag" class="w-24 h-auto">
+            </div>
+        </div>
+    
+    </section>
+
+<!-- EXP-->
+    <section>
+        <div class="container mt-20 mx-auto" id="work">
+            <h2 class="mx-auto text-5xl flex flex-col justify-center font-bold text-center ombre">
+                Expériences professionnelles
+            </h2>
+        
+            <div class="w-full lg:w-2/3 mx-auto flex flex-col mt-12 relative">
+
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/pc.png" class="w-48 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Couturière main</span>
+                                    <span class="font-body italic text-grey-40 block">Mars 2019 - Octobre 2021</span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Finitions de vêtements Prêt-à-Porter pour les maisons Dior, Hermès, Chloé, Céline, Balmain, Jean Patou... <br>
+                                        Contrôle qualité</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/lk.png" class="w-32 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Designer mode - Couturière main</span>
+                                    <span class="font-body italic text-grey-40 block">Octobre 2017 - Janvier 2019</span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Créations de modèles uniques et sur-mesures pour Lou Kasatche. <br>
+                                            Finitions de vêtements Prêt-à-Porter pour les maisons Dior, Hermès, Chloé. <br>
+                                            Contrôle qualité</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/cecile.png" class="w-80 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Brodeuse</span>
+                                    <span class="font-body italic text-grey-40 block">Septembre 2017 <span class="text-xs">intérim</span></span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Broderies défilé Prêt-à-Porter S/S 2018 pour Saint-Laurent</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/dior.png" class="w-60 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Brodeuse</span>
+                                    <span class="font-body italic text-grey-40 block">Juillet 2017 <span class="text-xs">intérim</span></span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Broderies défilé Prêt-à-Porter F/W 2017 pour Dior</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/lesage.png" class="w-72 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Brodeuse</span>
+                                    <span class="font-body italic text-grey-40 block">Mai 2017 - Juin 2017 <span class="text-xs">intérim</span></span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Broderies défilé Prêt-à-Porter de luxe <br>
+                                        Broderies défilé Haute-Couture F/W 2017 pour Chanel, Schiaparelli...<br>
+                                        Contrôle qualité et retouches broderies
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/br.png" class="w-72 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Concours Bordeaux Rosé</span>
+                                    <span class="font-body italic text-grey-40 block">Juin 2016 <span class="text-xs">défilé</span></span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Conception et confection de 10 tenues et d'une robe de mariée<br>
+                                        Stylisme & Matières
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/mr.png" class="w-72 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <i class="bx bxs-right-arrow text-primary hidden md:block"></i>
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">Assistante Styliste</span>
+                                    <span class="font-body italic text-grey-40 block">Juillet 2015</span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Maroquinerie tous type de cuir<br>
+                                        Création de moodboard, recherche matières et échantillons<br>
+                                        Dessins techniques <br>
+                                        Prototypes
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row text-center items-center justify-center my-10">
+                    <div class="md:w-2/5 mx-auto">
+                        <div class="flex justify-center items-center">
+                            <span class="flex-shrink-0">
+                                <img src="./images/cs.png" class="w-72 h-auto" alt="company logo">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 mx-auto">
+                        <div class="flex justify-center md:pl-18 relative">
+        
+                            <div class="mt-1 flex">
+                                <i class="bx bxs-right-arrow text-primary hidden md:block"></i>
+                                <div class="md:pl-8 md:-mt-1">
+                                    <span class="font-header font-bold text-xl text-primary uppercase block p-2">The Creative Sweatshop</span>
+                                    <span class="font-body italic text-grey-40 block">Juin 2015 <span class="text-xs">défilé</span></span>
+                                    <div class="pt-2">
+                                        <span class="font-body block">Conception et confection de tenues<br>
+                                        Stylisme <br>
+                                        Organisation Technique <br>
+                                        Backstage
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!--CONTACT-->
+    <section class="mt-8 mb-16 w-full lg:w-2/3 mx-auto flex flex-col relative" id="contact">  
+    </section>
+
+    <footer class="border-t-2 border-indigo-500/50">
+        <div class="flex flex-row justify-around text-indigo-200/50">
+            <a href="#formation">Formation</a>
+            <a href="#competence">Compétences</a>
+            <a href="#presentation">Projets</a>
+            <a href="#work">Expériences professionnelles</a>
+        </div>
+        <p class="m-2 text-center">
+            <span class="text-indigo-500/50">Réalisée en 2022 par moi-même en écoutant</span> <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400/75 via-pink-500/75 to-purple-500/75 font-bold ombre">Rocky Horror Picture Show.</span> 
+        </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

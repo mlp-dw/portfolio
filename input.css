@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ombre{
+  text-shadow: #fe77a8 1px 0 15px;
+}
+.hide{
+  display: none;
+}
+.boov{
+  display: block;
+  @apply mx-5 text-5xl flex flex-col justify-center font-bold;
+}
+a.top{
+  @apply w-24 mt-96 fixed z-30 text-center;
+  margin-left: 90%;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+CARD */
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 40vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+
+.card { 
+  width: var(--card-width);
+  height: var(--card-height);
+  @apply bg-gray-900 p-3 relative rounded flex justify-center items-center text-center cursor-pointer text-gray-900 
+  hover:text-indigo-500 duration-1000; 
+  
+}
+
+.card:hover:before, .card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+RESPONSIVE */
+
+@media screen and (max-width: 760px) {
+  .trio {
+    @apply flex flex-col justify-center items-center mx-auto;
+    
+  }
+  .hide{
+    display: block;
+    @apply mx-5 text-5xl text-center flex flex-col justify-center font-bold;
+  }
+  .boov{
+    display: none;
+  }
+  .duo{
+    @apply flex flex-col justify-center items-center mx-auto my-12;
+  }
+  .item{
+    margin: 5% 0 5% 0;
+  }
+  h2{
+    @apply text-xl
+  }
+  .competence{
+    @apply m-5;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .trio {
+    @apply flex flex-col justify-center items-center mx-auto my-0;
+    
+  }
+  .hide{
+    display: block;
+    @apply mx-5 text-5xl text-center flex flex-col justify-center font-bold;
+  }
+  .boov{
+    display: none;
+  }
+  .duo{
+    @apply flex flex-col justify-center items-center mx-auto my-12;
+  }
+  .item{
+    margin: 5% 0 5% 0;
+  }
+  h2{
+    @apply text-lg
+  }
+  .competence{
+    @apply flex-col justify-center items-center mx-auto m-2;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h2{
+    @apply text-sm
+  }
+  .competence{
+    @apply flex-col justify-center items-center mx-auto m-2;
+  }
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+TYPING */
+
+.line1 {
+  
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(20, end), curser1 0.8s 4;
+  border-right: 8px solid transparent;
+  animation-delay: 0;
+  transition: 0.2s;
+}
+
+.line2 {
+  
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(19, end), curser 0.8s infinite;
+  border-right: 8px solid white;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+.line1:active {
+  border-right: 8px solid transparent;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes curser {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes curser1 {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+COMPETENCES */
+.neon-white {
+  --neon: #5ddcff;
+  --neon-glow: #4e00c2;
+}
+
+@media (dynamic-range: high) {
+  .neon-white {
+    --neon-glow: color(display-p3 1 1 1);
+  }
+}
+
+.ring {
+  border: 5px solid var(--neon);
+  box-shadow: 
+    0 0 50px var(--neon-glow), 
+    inset 0 0 50px var(--neon-glow);
+  border-radius: 50%;
+  width: 20vh;
+  height: 20vh;
+  position: relative;
+  box-sizing: border-box;
+  
+}
+
+.colorBlock {
+  @apply relative overflow-hidden text-center align-middle; 
+}
+
+.colorFill:after{
+  content:'';
+  @apply block absolute bottom-0 top-0 left-0 right-0 bg-violet-500 opacity-50;
+  transition :  0.35s ease-in-out;
+  transition-property : top, bottom, left,right, border-width;
+}
+/* /////////100//////// */
+.to-top100:after{
+  top:100%;
+}
+.to-top100:hover:after{
+  top:0%;
+}
+/* /////////90//////// */
+.to-top90:after{
+  top:100%;
+}
+.to-top90:hover:after{
+  top:10%;
+}
+/* /////////80//////// */
+.to-top80:after{
+  top:100%;
+}
+.to-top80:hover:after{
+  top:20%;
+}
+/* /////////70//////// */
+.to-top70:after{
+  top:100%;
+}
+.to-top70:hover:after{
+  top:30%;
+}
+/* /////////60//////// */
+.to-top60:after{
+  top:100%;
+}
+.to-top60:hover:after{
+  top:40%;
+}
+/* /////////50//////// */
+.to-top50:after{
+  top:100%;
+}
+.to-top50:hover:after{
+  top:50%;
+}
+/* /////////40//////// */
+.to-top40:after{
+  top:100%;
+}
+.to-top40:hover:after{
+  top:60%;
+}
+/* /////////30//////// */
+.to-top30:after{
+  top:100%;
+}
+.to-top30:hover:after{
+  top:70%;
+}
+/* /////////20//////// */
+.to-top20:after{
+  top:100%;
+}
+.to-top20:hover:after{
+  top:80%;
+}
+/* /////////10//////// */
+.to-top10:after{
+  top:100%;
+}
+.to-top10:hover:after{
+  top:90%;
+}
