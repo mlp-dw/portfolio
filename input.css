@@ -116,9 +116,6 @@ RESPONSIVE */
   .competence{
     @apply m-5;
   }
-  .foot-nav{
-    @apply flex-col;
-  }
 }
 
 @media screen and (max-width: 550px) {
@@ -145,9 +142,6 @@ RESPONSIVE */
   .competence{
     @apply flex-col justify-center items-center mx-auto m-2;
   }
-  .foot-nav{
-    @apply flex-col;
-  }
 }
 
 @media screen and (max-width: 350px) {
@@ -156,9 +150,6 @@ RESPONSIVE */
   }
   .competence{
     @apply flex-col justify-center items-center mx-auto m-2;
-  }
-  .foot-nav{
-    @apply flex-col;
   }
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
