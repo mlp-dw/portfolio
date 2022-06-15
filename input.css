@@ -320,3 +320,10 @@ COMPETENCES */
 .to-top10:hover:after{
   top:90%;
 }
+/* /////////0//////// */
+.to-top0:after{
+  top:100%;
+}
+.to-top0:hover:after{
+  top:100%;
+}
