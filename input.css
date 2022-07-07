@@ -17,7 +17,7 @@ a.top{
   margin-left: 90%;
 }
 h2{
-  @apply text-5xl;
+  @apply text-5xl
 }
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,10 +114,14 @@ RESPONSIVE */
     margin: 5% 0 5% 0;
   }
   h2{
-    font-size: 35px
+    @apply text-xl
   }
+
   .competence{
     @apply m-5;
+  }
+  .exp{
+    @apply text-xl
   }
 }
 
@@ -140,7 +144,10 @@ RESPONSIVE */
     margin: 5% 0 5% 0;
   }
   h2{
-    font-size: 25px
+    @apply text-xs
+  }
+  .exp{
+    @apply text-xs
   }
   .competence{
     @apply flex-col justify-center items-center mx-auto m-2;
@@ -149,7 +156,10 @@ RESPONSIVE */
 
 @media screen and (max-width: 350px) {
   h2{
-   font-size: 25px
+    @apply text-xs
+  }
+  .exp{
+    @apply text-xs
   }
   .competence{
     @apply flex-col justify-center items-center mx-auto m-2;
