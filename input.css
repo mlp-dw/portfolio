@@ -16,9 +16,6 @@ a.top{
   @apply w-24 mt-96 fixed z-30 text-center;
   margin-left: 90%;
 }
-h2{
-  @apply text-5xl
-}
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 CARD */
@@ -116,12 +113,8 @@ RESPONSIVE */
   h2{
     @apply text-xl
   }
-
   .competence{
     @apply m-5;
-  }
-  .exp{
-    @apply text-xl
   }
 }
 
@@ -146,9 +139,6 @@ RESPONSIVE */
   h2{
     @apply text-xs
   }
-  .exp{
-    @apply text-xs
-  }
   .competence{
     @apply flex-col justify-center items-center mx-auto m-2;
   }
@@ -156,9 +146,6 @@ RESPONSIVE */
 
 @media screen and (max-width: 350px) {
   h2{
-    @apply text-xs
-  }
-  .exp{
     @apply text-xs
   }
   .competence{
