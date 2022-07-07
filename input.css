@@ -137,7 +137,7 @@ RESPONSIVE */
     margin: 5% 0 5% 0;
   }
   h2{
-    @apply text-lg
+    @apply text-xl
   }
   .competence{
     @apply flex-col justify-center items-center mx-auto m-2;
@@ -146,7 +146,7 @@ RESPONSIVE */
 
 @media screen and (max-width: 350px) {
   h2{
-    @apply text-lg
+    @apply text-xl
   }
   .competence{
     @apply flex-col justify-center items-center mx-auto m-2;
